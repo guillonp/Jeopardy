@@ -1,0 +1,80 @@
+/* Write your CSS Here. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    color: rgb(11, 6, 6);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.showQuestion{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.showQuestion:hover, .answerB:hover{
+    color: #e9dede;
+    background-color:#000000;
+
+}
+
+#questionDiv{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.correctIncorrect{
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 50px;
+}
+
+.points{
+    margin-top: 7px;
+}
+
+.categoryID{
+    color:black;
+    font-size: 30px;
+}
+
+#start:hover{
+    color: #010107fa;
+    background-color:#2ec952;
+    /* border-radius:30px; */
+}
+
+#start{
+    border-radius:30px ;
+    padding: 10px;
+}
+
+.newGameB:hover{
+    color: #000000fa;
+    background-color:#c91c1c;
+    padding: 10px;
+}
+
+.correctIncorrect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
